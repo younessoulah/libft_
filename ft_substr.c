@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:46:24 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/21 17:11:19 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/24 20:47:12 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p = malloc(len + 1);
 	if (!p)
 		return (NULL);
-	while (i < len)
+	while (i < len && s[start])
 	{
 		p[i] = s[start];
 		start++;

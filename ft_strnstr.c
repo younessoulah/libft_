@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:54 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/24 10:26:50 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/25 13:20:34 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
+	if ((!little || !big) && len == 0)
+		return (NULL);
 	if (*little == '\0')
 		return ((char *)big);
 	while (big[i] && i < len)

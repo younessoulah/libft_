@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:30 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/24 16:42:34 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/25 13:13:26 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,22 +30,28 @@ static int	manywords(const char *s, char c)
 	return (count);
 }
 
+char	**my_free(char **sp)
+{
+	size_t	i;
 
+	i = 0;
+	while (sp[i])
+	{
+		free(sp[i]);
+		i++;
+	}
+	free(sp);
+	return (sp);
+}
 
-char	**ft_split(char const *s, char c)
+char	**fill(char **sp, char const *s, char c)
 {
 	size_t	i;
 	size_t	start;
-	char	**sp;
 	size_t	w;
 
 	i = 0;
 	w = 0;
-	if (!s)
-		return (NULL);
-	sp = ft_calloc((manywords(s, c) + 1), sizeof(char *));
-	if (!sp)
-		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c)
@@ -53,7 +59,10 @@ char	**ft_split(char const *s, char c)
 			start = i;
 			while (s[i] != c && s[i])
 				i++;
-			sp[w++] = ft_substr(s, start, i - start);
+			sp[w] = ft_substr(s, start, i - start);
+			if (!sp[w])
+				return (my_free(sp));
+			w++;
 		}
 		else
 			i++;
@@ -61,10 +70,23 @@ char	**ft_split(char const *s, char c)
 	return (sp);
 }
 
+char	**ft_split(char const *s, char c)
+{
+	char	**sp;
+
+	if (!s)
+		return (NULL);
+	sp = ft_calloc((manywords(s, c) + 1), sizeof(char *));
+	if (!sp)
+		return (NULL);
+	return (fill(sp, s, c));
+}
+
 // int main()
 // {
 // 	char **x;
-// 	char a[] = "                 ";
+// 	char a[] = "  ypioejvj ocownc    dnc'ohwo  oij";
 // 	x = ft_split(a, ' ');
-// 	printf("%s\n", x);
+// 	for(int i = 0; i < 4; i++)
+// 		printf("%s\n", x[i]);
 // }
