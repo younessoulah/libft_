@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:30 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 13:13:26 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/26 07:52:22 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	manywords(const char *s, char c)
 	return (count);
 }
 
-char	**my_free(char **sp)
+static	char	**my_free(char **sp)
 {
 	size_t	i;
 
@@ -44,7 +44,7 @@ char	**my_free(char **sp)
 	return (sp);
 }
 
-char	**fill(char **sp, char const *s, char c)
+static	char	**fill(char **sp, char const *s, char c)
 {
 	size_t	i;
 	size_t	start;

@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:42:30 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/19 12:02:02 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/26 07:50:39 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*p;
 
 	i = 0;
+	if (count > count * size)
+		return (0);
 	p = malloc(count * size);
 	if (!p)
 		return (NULL);

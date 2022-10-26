@@ -6,12 +6,11 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:43:46 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 18:00:45 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/26 07:51:22 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

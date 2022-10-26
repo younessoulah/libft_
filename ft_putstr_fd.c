@@ -6,12 +6,11 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:04 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 13:12:12 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/26 07:52:00 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
