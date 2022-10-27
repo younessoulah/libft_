@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:50:58 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/19 23:40:46 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:51:52 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
-// int	main(void)
-// {
-// 	printf("%c", ft_toupper(100));
-// }

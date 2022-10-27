@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:46:11 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/22 08:03:59 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:45 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	p = ft_substr(s1, start, (end - start + 1));
 	return (p);
 }
-
-// int main()
-// {
-// 	char a[] = "HELLOWORLD!";
-// 	char b[] = "OHD";
-// 	printf("%s", ft_strtrim(a, b));
-// }

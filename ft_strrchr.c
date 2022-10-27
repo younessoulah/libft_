@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:46:03 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/19 23:40:29 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:41 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-// 	char a[] = "youness";
-// 	printf("%s", ft_strrchr(a, '\0'));
-// }

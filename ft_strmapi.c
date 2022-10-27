@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:52:37 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/24 10:18:43 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:28 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*p;
 	size_t	i;
 
-	if (!s)
+	if (!s || !f)
 		return (0);
 	i = 0;
 	len = ft_strlen(s);
@@ -33,21 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	p[i] = '\0';
 	return (p);
 }
-
-// char	rrrr(unsigned int a, char b)
-// {
-// 	(void)a;
-// 	if ((b >= 'a' && b < 'z') || (b >= 'A' && b < 'Z'))
-// 		b += 1;
-// 	else if ((b == 'z') || (b == 'Z'))
-// 		b -= 25;
-// 	return (b);
-// }
-
-// int	main(void)
-// {
-// 	char a[] = "abcZ";
-// 	char (*k)(unsigned int, char);
-// 	k = &rrrr;
-// 	printf("%s\n", ft_strmapi(a, k));
-// }

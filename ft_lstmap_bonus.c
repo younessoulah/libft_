@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 18:11:52 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 19:07:04 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:43:56 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		p -> next = ft_lstnew(f(lst -> content));
 		if (!p -> next)
 		{
-			ft_lstclear(&p, del);
+			ft_lstclear(&temp, del);
 			return (0);
 		}
 		p = p -> next;

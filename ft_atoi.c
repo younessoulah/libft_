@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:40:51 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/23 11:06:43 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:06:40 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,20 +40,3 @@ int	ft_atoi(const char *str)
 		return (0);
 	return (res * sign);
 }
-
-// int	main(void)
-// {
-// 	// printf("%d", ft_atoi("-123"));
-// 	printf("Their > %d\n", atoi("9223372036854L"));
-// 	printf("Mine => %d\n", ft_atoi("9223372036854L"));
-// }
-
-// 	printf("Their > %d\n", atoi("-21474836477"));
-// 	printf("Mine => %d\n", ft_atoi("-21474836477"));
-
-// 	printf("Their > %d\n", atoi("2147483647"));
-// 	printf("Mine => %d\n", ft_atoi("2147483647"));
-
-// 	printf("Their > %d\n", atoi("4294967297"));
-// 	printf("Mine => %d\n", ft_atoi("4294967297"));
-// }

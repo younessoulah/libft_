@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 19:42:24 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/21 16:42:07 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:07:43 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,18 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	t_list	*temp;
 	int		count;
 
-	temp = lst;
 	count = 0;
-	if (temp == NULL)
+	if (!lst)
 		return (0);
 	else
 	{
-		while (temp)
+		while (lst)
 		{
 			count++;
-			temp = temp -> next;
+			lst = lst -> next;
 		}
 	}
 	return (count);
 }
-
-// int main()
-// {
-// 	t_list *l;
-
-// }

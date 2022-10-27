@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:54 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 13:20:34 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:37 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-// int main()
-// {
-// 	char a[] = "aaabccccbcd";
-// 	char b [] =  "aabc";
-// 	char *p = strnstr(a, b, 9);
-// 	printf("%s", ft_strnstr("lorem ipsum dolor sit amet", "", 10));
-// }

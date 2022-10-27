@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:43:29 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/20 11:08:02 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:07:53 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-// 	char a[] = "youness";
-// 	char b[] = "poune";
-// 	printf("%d\n", memcmp(a,b,7));
-// 	printf("-------\n");
-// 	printf("%d\n", ft_memcmp(a,b,7));
-// } 

@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 10:37:34 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 14:26:18 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/26 08:49:47 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
 
-	if (lst && del)
+	if (lst && del && *lst)
 	{
 		temp = *lst;
 		while (*lst)

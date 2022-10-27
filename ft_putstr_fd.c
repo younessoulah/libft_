@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:04 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/26 07:52:00 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:08:44 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-
-// int main()
-// {
-// 	int fd = open("test1", O_RDWR | O_CREAT, 0777);
-// 	ft_putstr_fd("hello world", fd);
-// }

@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:56 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/17 22:01:52 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:08 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	l;
 	char	*p;
 
-	if (!s1 && !s2)
+	if (!s1 || !s2)
 		return (NULL);
 	if (!s1 && s2)
 		return ((char *)s2);
@@ -32,11 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	p[l] = '\0';
 	return (p);
 }
-
-// int main()
-// {
-// 	char a[] = "youness";
-// 	char b[] = "oullah";
-// 	// char *b;
-// 	printf("%s",ft_strjoin(a, b));
-// }

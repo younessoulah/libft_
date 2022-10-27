@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:21 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/26 07:51:37 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:08:21 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-// int main()
-// {
-// 	char c[] = "youness";
-// 	char *j = ft_memset(c, 65, 11);
-
-// 	// for (int i = 0; i < 6; i++)
-// 		printf("%s\n", j);
-// }

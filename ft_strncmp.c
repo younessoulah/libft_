@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:39 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 21:54:36 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:32 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	char a[] = "\200";
-// 	char b[] = "\0";
-// 	printf("%d", strncmp(a, b, 2));
-// }

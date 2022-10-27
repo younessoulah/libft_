@@ -18,13 +18,13 @@ OBJB = $(SRSB:.c=.o)
 all : $(NAME)
 
 $(NAME): $(OBJ)
-	ar -rcs  $(NAME) $(OBJ)
+	ar -rc  $(NAME) $(OBJ)
 
-bonus : $(OBJB)
-	ar -rcs $(NAME) $(OBJB)
+bonus : all $(OBJB)
+	ar -rc $(NAME) $(OBJB)
 
 clean :
-	rm -rf $(OBJ) $(OBJB)
+	rm -f $(OBJ) $(OBJB)
 fclean : clean
-	rm -rf $(NAME)
+	rm -f $(NAME)
 re : fclean all

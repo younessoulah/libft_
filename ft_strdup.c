@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:48 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/21 13:25:29 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:00 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,3 @@ char	*ft_strdup(const char *s1)
 	p[i] = '\0';
 	return (p);
 }
-
-// int main(void)
-// {
-// 	char a[] = "youness";
-// 	printf("%s", ft_strdup(a));
-// }

@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:26 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/22 14:15:30 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:20 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// int main()
-// {
-// 	printf("%zu", ft_strlen("youness"));
-// }

@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:06 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/25 22:19:40 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:12 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	}
 	return (sl + destsize);
 }
-
-// int	main(void)
-// {
-// 	char a[] = "youness";
-// 	char b[] = "youness";
-// 	size_t x = ft_strlcat(b, NULL, 0);
-// 	printf("%s	%zu", b,x);
-// }

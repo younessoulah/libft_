@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:43:21 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/19 23:04:25 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:07:48 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-// 	char a[] = "younessp";
-// 	char *b = ft_memchr(a, 's', 5);
-// 		printf("%s\n", b);
-// }

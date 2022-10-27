@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:45:17 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/17 16:10:23 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:09:16 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 	}
 	return (ls);
 }
-
-// int	main(void)
-// {
-// 	char	a[] = "youness";
-// 	char	b[] = "oullah";
-// 	ft_strlcpy(b, a, 20);
-// 	printf("%s", b);
-// }

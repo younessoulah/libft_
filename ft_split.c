@@ -6,7 +6,7 @@
 /*   By: youllah <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:44:30 by youllah           #+#    #+#             */
-/*   Updated: 2022/10/26 07:52:22 by youllah          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:08:49 by youllah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static	char	**my_free(char **sp)
 		i++;
 	}
 	free(sp);
-	return (sp);
+	return (NULL);
 }
 
 static	char	**fill(char **sp, char const *s, char c)
@@ -57,7 +57,7 @@ static	char	**fill(char **sp, char const *s, char c)
 		if (s[i] != c)
 		{
 			start = i;
-			while (s[i] != c && s[i])
+			while (s[i] && s[i] != c)
 				i++;
 			sp[w] = ft_substr(s, start, i - start);
 			if (!sp[w])
@@ -81,12 +81,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill(sp, s, c));
 }
-
-// int main()
-// {
-// 	char **x;
-// 	char a[] = "  ypioejvj ocownc    dnc'ohwo  oij";
-// 	x = ft_split(a, ' ');
-// 	for(int i = 0; i < 4; i++)
-// 		printf("%s\n", x[i]);
-// }
