@@ -20,7 +20,7 @@ all : $(NAME)
 $(NAME): $(OBJ)
 	ar -rc  $(NAME) $(OBJ)
 
-bonus : all $(OBJB)
+bonus : $(OBJB)
 	ar -rc $(NAME) $(OBJB)
 
 clean :
